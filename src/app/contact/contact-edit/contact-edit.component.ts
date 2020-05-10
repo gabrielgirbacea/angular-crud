@@ -53,44 +53,32 @@ export class ContactEditComponent {
 
   // Public methods
 
-  addContact() {
+  addOrUpdateContact() {
     if (this.contactForm.valid) {
-      console.log(this.contactForm.value);
-
-      const contact: Contact = new Contact();
-      contact.firstName = this.firstNameControl.value;
-      contact.lastName = this.lastNameControl.value;
-      contact.email = this.emailControl.value;
-      contact.phoneNumber = this.phoneNumberControl.value;
-
-      this.contactService.addContact(contact).subscribe(
-        () => {
-          this.router.navigate(["contacts"]);
-        },
-        error => {
-          alert(error.error);
-        }
-      );
-    }
-  }
-
-  editContact() {
-    if (this.contactForm.valid) {
-      console.log(this.contactForm.value);
-
       this.contact.firstName = this.firstNameControl.value;
       this.contact.lastName = this.lastNameControl.value;
       this.contact.email = this.emailControl.value;
       this.contact.phoneNumber = this.phoneNumberControl.value;
 
-      this.contactService.updateContact(this.contact).subscribe(
-        () => {
-          this.router.navigate(["contacts"]);
-        },
-        error => {
-          alert(error.error);
-        }
-      );
+      if (this.contact.id === 0) {
+        this.contactService.addContact(this.contact).subscribe(
+          () => {
+            this.router.navigate(["contacts"]);
+          },
+          error => {
+            alert(error.error);
+          }
+        );
+      } else {
+        this.contactService.updateContact(this.contact).subscribe(
+          () => {
+            this.router.navigate(["contacts"]);
+          },
+          error => {
+            alert(error.error);
+          }
+        );
+      }
     }
   }
 
