@@ -9,6 +9,10 @@ import { MaterialModule } from "./material.module";
 import { AuthModule } from "./auth/auth.module";
 import { ContactModule } from "./contact/contact.module";
 import { LayoutModule } from "./layout/layout.module";
+import { AuthService } from "@services/auth.service";
+import { ContactService } from "@services/contact.service";
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { AuthorizationInterceptor } from '@interceptors/authorization.interceptor';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,9 +24,18 @@ import { LayoutModule } from "./layout/layout.module";
     AuthModule,
     ContactModule,
     LayoutModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    ContactService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthorizationInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

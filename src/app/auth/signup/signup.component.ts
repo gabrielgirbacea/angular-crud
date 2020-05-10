@@ -1,5 +1,7 @@
 import { Component } from "@angular/core";
 import { FormBuilder, AbstractControl, Validators } from "@angular/forms";
+import { AuthService } from "@services/auth.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-signup",
@@ -7,7 +9,12 @@ import { FormBuilder, AbstractControl, Validators } from "@angular/forms";
   styleUrls: ["./signup.component.sass"]
 })
 export class SignupComponent {
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private authService: AuthService, private router: Router) {
+    // Redirect to contacts if already logged in
+    if (this.authService.userValue) {
+      this.router.navigate(["/contacts"]);
+    }
+  }
 
   // Build the form
   signupForm = this.fb.group({
@@ -20,6 +27,15 @@ export class SignupComponent {
   signup() {
     if (this.signupForm.valid) {
       console.log(this.signupForm.value);
+      this.authService.signup(this.emailControl.value.trim(), this.passwordControl.value.trim()).subscribe(
+        () => {
+          this.router.navigate(["/contacts"]);
+        },
+        error => {
+          console.log(error);
+          alert(error.error);
+        }
+      );
     }
   }
 

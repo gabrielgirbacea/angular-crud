@@ -1,5 +1,8 @@
 import { Component } from "@angular/core";
 import { AbstractControl, Validators, FormBuilder } from "@angular/forms";
+import { Contact } from "@models/contact";
+import { ContactService } from "@services/contact.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-contact-edit",
@@ -7,7 +10,7 @@ import { AbstractControl, Validators, FormBuilder } from "@angular/forms";
   styleUrls: ["./contact-edit.component.sass"]
 })
 export class ContactEditComponent {
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private contactService: ContactService, private router: Router) {}
 
   // Build the form
   contactForm = this.fb.group({
@@ -22,6 +25,21 @@ export class ContactEditComponent {
   addContact() {
     if (this.contactForm.valid) {
       console.log(this.contactForm.value);
+
+      const contact: Contact = new Contact();
+      contact.firstName = this.firstNameControl.value;
+      contact.lastName = this.lastNameControl.value;
+      contact.email = this.emailControl.value;
+      contact.phoneNumber = this.phoneNumberControl.value;
+
+      this.contactService.addContact(contact).subscribe(
+        () => {
+          this.router.navigate(["contacts"]);
+        },
+        error => {
+          alert(error.error);
+        }
+      );
     }
   }
 
