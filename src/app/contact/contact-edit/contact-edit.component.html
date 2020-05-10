@@ -1,5 +1,7 @@
 <div fxLayout="column" fxLayoutAlign="center center">
-  <mat-card class="text-align-center">
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+
+  <mat-card class="text-align-center" *ngIf="!isLoading">
     <mat-card-title>
       {{operationText}}
     </mat-card-title>
@@ -30,7 +32,8 @@
 
     <mat-card-actions>
       <a mat-button color="primary" routerLink="/">Cancel</a>
-      <button mat-raised-button color="primary" [disabled]="!contactForm.valid" (click)="addContact()">{{operationText}}</button>
+      <button *ngIf="isAdd" mat-raised-button color="primary" [disabled]="!contactForm.valid" (click)="addContact()">{{operationText}}</button>
+      <button *ngIf="!isAdd" mat-raised-button color="primary" [disabled]="!contactForm.valid" (click)="editContact()">{{operationText}}</button>
     </mat-card-actions>
   </mat-card>
 </div>

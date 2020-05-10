@@ -15,6 +15,8 @@ export class ContactListComponent {
   dataSource: Contact[] = [];
   displayedColumns: string[] = ["firstName", "lastName", "email", "phoneNumber", "actions"];
 
+  isLoading = true;
+
   // Public methods
 
   deleteContact(id): void {
@@ -35,6 +37,7 @@ export class ContactListComponent {
   private retrieveContacts(): void {
     this.contactService.getContacts().subscribe(results => {
       this.dataSource = results;
+      this.isLoading = false;
     });
   }
 }

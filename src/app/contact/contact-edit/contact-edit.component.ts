@@ -2,7 +2,8 @@ import { Component } from "@angular/core";
 import { AbstractControl, Validators, FormBuilder } from "@angular/forms";
 import { Contact } from "@models/contact";
 import { ContactService } from "@services/contact.service";
-import { Router } from "@angular/router";
+import { Router, ActivatedRoute } from "@angular/router";
+import { map } from "rxjs/operators";
 
 @Component({
   selector: "app-contact-edit",
@@ -10,14 +11,37 @@ import { Router } from "@angular/router";
   styleUrls: ["./contact-edit.component.sass"]
 })
 export class ContactEditComponent {
-  constructor(private fb: FormBuilder, private contactService: ContactService, private router: Router) {
-    this.isAdd = true;
+  constructor(private fb: FormBuilder, private contactService: ContactService, private router: Router, private route: ActivatedRoute) {
+    route.params
+      .pipe(
+        map(value => {
+          if (value.id) {
+            return value.id;
+          }
+          return undefined;
+        })
+      )
+      .subscribe(id => {
+        if (id) {
+          // If value is not undefined, it means that we are editing a Contact,
+          // hence we need to retrieve it.
+          this.contactService.getContact(id).subscribe(contact => {
+            this.populateFields(contact);
+            this.isLoading = false;
+          });
 
-    this.operationText = this.isAdd ? "Add Contact" : "Edit Contact";
+          this.isAdd = false;
+          this.operationText = "Edit Contact";
+        } else {
+          this.isLoading = false;
+        }
+      });
   }
 
+  isLoading = true;
   isAdd: boolean;
-  operationText: string;
+  operationText = "Add Contact";
+  contact: Contact = new Contact();
 
   // Build the form
   contactForm = this.fb.group({
@@ -40,6 +64,26 @@ export class ContactEditComponent {
       contact.phoneNumber = this.phoneNumberControl.value;
 
       this.contactService.addContact(contact).subscribe(
+        () => {
+          this.router.navigate(["contacts"]);
+        },
+        error => {
+          alert(error.error);
+        }
+      );
+    }
+  }
+
+  editContact() {
+    if (this.contactForm.valid) {
+      console.log(this.contactForm.value);
+
+      this.contact.firstName = this.firstNameControl.value;
+      this.contact.lastName = this.lastNameControl.value;
+      this.contact.email = this.emailControl.value;
+      this.contact.phoneNumber = this.phoneNumberControl.value;
+
+      this.contactService.updateContact(this.contact).subscribe(
         () => {
           this.router.navigate(["contacts"]);
         },
@@ -76,5 +120,15 @@ export class ContactEditComponent {
     }
 
     return "";
+  }
+
+  // Private methods
+  populateFields(contact: Contact) {
+    this.contact = contact;
+
+    this.firstNameControl.setValue(contact.firstName);
+    this.lastNameControl.setValue(contact.lastName);
+    this.emailControl.setValue(contact.email);
+    this.phoneNumberControl.setValue(contact.phoneNumber);
   }
 }

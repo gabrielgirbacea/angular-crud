@@ -16,9 +16,18 @@ export class ContactService {
     return this.httpClient.get<Contact[]>(`${environment.contactApiUrl}`);
   }
 
+  getContact(id) {
+    return this.httpClient.get<Contact>(`${environment.contactApiUrl}/${id}`);
+  }
+
   addContact(contact: Contact) {
     contact.userId = this.authService.userValue.sub;
     return this.httpClient.post<Contact>(`${environment.contactApiUrl}`, contact);
+  }
+
+  updateContact(contact: Contact) {
+    // contact.userId = this.authService.userValue.sub;
+    return this.httpClient.put<Contact>(`${environment.contactApiUrl}/${contact.id}`, contact);
   }
 
   deleteContact(id: number) {
