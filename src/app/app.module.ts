@@ -6,11 +6,12 @@ import { AppComponent } from "./app.component";
 import { MaterialModule } from "./material.module";
 import { AuthModule } from "./auth/auth.module";
 import { ContactModule } from "./contact/contact.module";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { LayoutModule } from "./layout/layout.module";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, MaterialModule, AuthModule, ContactModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule, AuthModule, ContactModule, LayoutModule],
   providers: [],
   bootstrap: [AppComponent]
 })
