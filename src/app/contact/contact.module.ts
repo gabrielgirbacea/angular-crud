@@ -6,10 +6,11 @@ import { ContactRoutingModule } from "./contact-routing.module";
 import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { MaterialModule } from "../material.module";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [ContactEditComponent, ContactListComponent],
-  imports: [CommonModule, ContactRoutingModule, ReactiveFormsModule, RouterModule, MaterialModule],
+  imports: [CommonModule, ContactRoutingModule, ReactiveFormsModule, RouterModule, MaterialModule, FlexLayoutModule],
   exports: [ContactEditComponent, ContactListComponent]
 })
 export class ContactModule {}

@@ -6,10 +6,11 @@ import { AuthRoutingModule } from "./auth-routing.module";
 import { ReactiveFormsModule } from "@angular/forms";
 import { MaterialModule } from "../material.module";
 import { RouterModule } from "@angular/router";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [LoginComponent, SignupComponent],
-  imports: [CommonModule, AuthRoutingModule, ReactiveFormsModule, MaterialModule, RouterModule],
+  imports: [CommonModule, AuthRoutingModule, ReactiveFormsModule, MaterialModule, RouterModule, FlexLayoutModule],
   exports: [LoginComponent, SignupComponent]
 })
 export class AuthModule {}
