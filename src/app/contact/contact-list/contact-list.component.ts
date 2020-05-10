@@ -2,6 +2,8 @@ import { Component } from "@angular/core";
 import { ContactService } from "@services/contact.service";
 import { Contact } from "@models/contact";
 import { Router } from "@angular/router";
+import { MatDialog } from "@angular/material/dialog";
+import { DeleteConfirmationComponent } from "../delete-confirmation/delete-confirmation.component";
 
 @Component({
   selector: "app-contact-list",
@@ -9,7 +11,7 @@ import { Router } from "@angular/router";
   styleUrls: ["./contact-list.component.sass"]
 })
 export class ContactListComponent {
-  constructor(private contactService: ContactService, private router: Router) {
+  constructor(private contactService: ContactService, private router: Router, public dialog: MatDialog) {
     this.retrieveContacts();
   }
   dataSource: Contact[] = [];
@@ -19,17 +21,28 @@ export class ContactListComponent {
 
   // Public methods
 
-  deleteContact(id): void {
-    console.log("Deleting " + id);
-    this.contactService.deleteContact(id).subscribe(
-      () => {
-        this.retrieveContacts();
-      },
-      error => {
-        console.log(error);
-        alert(error.error);
+  deleteContact(contact): void {
+    const dialogRef = this.dialog.open(DeleteConfirmationComponent, {
+      width: "300px",
+      data: { contact }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log("The dialog was closed");
+
+      if (result) {
+        console.log("Deleting " + contact.id);
+        this.contactService.deleteContact(contact.id).subscribe(
+          () => {
+            this.retrieveContacts();
+          },
+          error => {
+            console.log(error);
+            alert(error.error);
+          }
+        );
       }
-    );
+    });
   }
 
   // Private methods

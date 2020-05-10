@@ -7,10 +7,11 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { MaterialModule } from "../material.module";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { DeleteConfirmationComponent } from "./delete-confirmation/delete-confirmation.component";
 
 @NgModule({
-  declarations: [ContactEditComponent, ContactListComponent],
+  declarations: [ContactEditComponent, ContactListComponent, DeleteConfirmationComponent],
   imports: [CommonModule, ContactRoutingModule, ReactiveFormsModule, RouterModule, MaterialModule, FlexLayoutModule],
-  exports: [ContactEditComponent, ContactListComponent]
+  exports: [ContactEditComponent, ContactListComponent, DeleteConfirmationComponent]
 })
 export class ContactModule {}

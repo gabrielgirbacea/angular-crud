@@ -35,7 +35,7 @@
         <a mat-icon-button color="primary" [routerLink]="['/contacts/edit-contact', element.id]">
           <mat-icon>create</mat-icon>
         </a>
-        <button mat-icon-button color="accent" (click)="deleteContact(element.id)">
+        <button mat-icon-button color="accent" (click)="deleteContact(element)">
           <mat-icon>delete</mat-icon>
         </button>
       </td>
@@ -45,3 +45,4 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
   </table>
 </div>
+
