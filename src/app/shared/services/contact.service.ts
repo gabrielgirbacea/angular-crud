@@ -20,4 +20,8 @@ export class ContactService {
     contact.userId = this.authService.userValue.sub;
     return this.httpClient.post<Contact>(`${environment.contactApiUrl}`, contact);
   }
+
+  deleteContact(id: number) {
+    return this.httpClient.delete<number>(`${environment.contactApiUrl}/${id}`);
+  }
 }

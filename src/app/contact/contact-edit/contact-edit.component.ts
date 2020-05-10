@@ -10,7 +10,14 @@ import { Router } from "@angular/router";
   styleUrls: ["./contact-edit.component.sass"]
 })
 export class ContactEditComponent {
-  constructor(private fb: FormBuilder, private contactService: ContactService, private router: Router) {}
+  constructor(private fb: FormBuilder, private contactService: ContactService, private router: Router) {
+    this.isAdd = true;
+
+    this.operationText = this.isAdd ? "Add Contact" : "Edit Contact";
+  }
+
+  isAdd: boolean;
+  operationText: string;
 
   // Build the form
   contactForm = this.fb.group({
