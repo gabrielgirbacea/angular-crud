@@ -1,1 +1,34 @@
-<p>contact-edit works!</p>
+<mat-card class="text-align-center">
+  <mat-card-title>
+    Add Contact
+  </mat-card-title>
+
+  <mat-card-content>
+    <form [formGroup]="contactForm">
+      <mat-form-field appearance="standard">
+        <input type="text" formControlName="firstName" matInput placeholder="First Name" />
+        <mat-error *ngIf="firstNameControl.invalid">{{ getErrorMessage(firstNameControl) }}</mat-error>
+      </mat-form-field>
+      <br />
+      <mat-form-field appearance="standard">
+        <input type="text" formControlName="lastName" matInput placeholder="Last Name" />
+        <mat-error *ngIf="lastNameControl.invalid">{{ getErrorMessage(lastNameControl) }}</mat-error>
+      </mat-form-field>
+      <br />
+      <mat-form-field appearance="standard">
+        <input type="email" formControlName="email" matInput placeholder="Email Address" />
+        <mat-error *ngIf="emailControl.invalid">{{ getErrorMessage(emailControl) }}</mat-error>
+      </mat-form-field>
+      <br />
+      <mat-form-field appearance="standard">
+        <input type="text" formControlName="phoneNumber" matInput placeholder="Phone Number" />
+        <mat-error *ngIf="phoneNumberControl.invalid">{{ getErrorMessage(phoneNumberControl) }}</mat-error>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <a mat-button color="primary" routerLink="/">Cancel</a>
+    <button mat-raised-button color="primary" [disabled]="!contactForm.valid" (click)="addContact()">Add Contact</button>
+  </mat-card-actions>
+</mat-card>
