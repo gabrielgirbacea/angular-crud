@@ -24,8 +24,8 @@ export class AuthService {
     return this.userSubject.value;
   }
 
-  get isAuthenticated$(): Observable<boolean> {
-    return this.user$.pipe(map(user => user !== null && user !== undefined));
+  get isAuthenticated(): boolean {
+    return this.userValue !== null && this.userValue !== undefined;
   }
 
   // Public methods
