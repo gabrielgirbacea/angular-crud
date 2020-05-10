@@ -1,4 +1,821 @@
 {
-  "contacts": [],
-  "users": []
+  "contacts": [
+    {
+      "firstName": "Tallulah",
+      "lastName": "Moses",
+      "email": "Duis@pedeblandit.co.uk",
+      "phoneNumber": "(812) 485-1494",
+      "id": 1,
+      "userId": 3
+    },
+    {
+      "firstName": "Ralph",
+      "lastName": "Pena",
+      "email": "libero.Donec@lectusasollicitudin.org",
+      "phoneNumber": "(433) 581-3339",
+      "id": 2,
+      "userId": 3
+    },
+    {
+      "firstName": "Bruno",
+      "lastName": "Branch",
+      "email": "luctus@necenim.com",
+      "phoneNumber": "(284) 346-8850",
+      "id": 3,
+      "userId": 1
+    },
+    {
+      "firstName": "Laith",
+      "lastName": "Daniel",
+      "email": "sapien.imperdiet.ornare@utsem.com",
+      "phoneNumber": "(919) 938-9179",
+      "id": 4,
+      "userId": 3
+    },
+    {
+      "firstName": "Hedwig",
+      "lastName": "Ferrell",
+      "email": "sed@Duiscursus.org",
+      "phoneNumber": "(339) 711-2791",
+      "id": 5,
+      "userId": 3
+    },
+    {
+      "firstName": "Zoe",
+      "lastName": "Sellers",
+      "email": "odio@afeugiat.com",
+      "phoneNumber": "(900) 214-4541",
+      "id": 6,
+      "userId": 1
+    },
+    {
+      "firstName": "Mari",
+      "lastName": "Michael",
+      "email": "mauris.rhoncus.id@Aliquamrutrum.edu",
+      "phoneNumber": "(301) 539-5286",
+      "id": 7,
+      "userId": 1
+    },
+    {
+      "firstName": "Ava",
+      "lastName": "Sexton",
+      "email": "libero.at.auctor@erategettincidunt.co.uk",
+      "phoneNumber": "(410) 937-6052",
+      "id": 8,
+      "userId": 3
+    },
+    {
+      "firstName": "Sydney",
+      "lastName": "Lawson",
+      "email": "enim.diam.vel@etpede.edu",
+      "phoneNumber": "(266) 622-8108",
+      "id": 9,
+      "userId": 3
+    },
+    {
+      "firstName": "Kyle",
+      "lastName": "Bryant",
+      "email": "dictum@Praesentinterdumligula.co.uk",
+      "phoneNumber": "(470) 784-3722",
+      "id": 10,
+      "userId": 3
+    },
+    {
+      "firstName": "Kellie",
+      "lastName": "Frost",
+      "email": "sit.amet@musAeneaneget.com",
+      "phoneNumber": "(797) 614-6394",
+      "id": 11,
+      "userId": 3
+    },
+    {
+      "firstName": "Desiree",
+      "lastName": "Dixon",
+      "email": "lectus.pede.et@idnunc.edu",
+      "phoneNumber": "(407) 767-7990",
+      "id": 12,
+      "userId": 1
+    },
+    {
+      "firstName": "Veda",
+      "lastName": "Ellison",
+      "email": "sed.tortor.Integer@nonvestibulum.ca",
+      "phoneNumber": "(238) 575-8132",
+      "id": 13,
+      "userId": 2
+    },
+    {
+      "firstName": "Eliana",
+      "lastName": "Curtis",
+      "email": "est.Mauris.eu@Donec.co.uk",
+      "phoneNumber": "(449) 742-8839",
+      "id": 14,
+      "userId": 1
+    },
+    {
+      "firstName": "Brett",
+      "lastName": "Shelton",
+      "email": "dis@sit.ca",
+      "phoneNumber": "(909) 577-9326",
+      "id": 15,
+      "userId": 2
+    },
+    {
+      "firstName": "Lucian",
+      "lastName": "Atkinson",
+      "email": "turpis.egestas@etmagnisdis.co.uk",
+      "phoneNumber": "(375) 195-8579",
+      "id": 16,
+      "userId": 1
+    },
+    {
+      "firstName": "Mason",
+      "lastName": "Sullivan",
+      "email": "sociis.natoque.penatibus@odio.org",
+      "phoneNumber": "(536) 956-5321",
+      "id": 17,
+      "userId": 2
+    },
+    {
+      "firstName": "Fritz",
+      "lastName": "Brooks",
+      "email": "et.malesuada@acmetusvitae.ca",
+      "phoneNumber": "(465) 540-5495",
+      "id": 18,
+      "userId": 1
+    },
+    {
+      "firstName": "Lana",
+      "lastName": "Ray",
+      "email": "tincidunt.nunc.ac@Phasellus.edu",
+      "phoneNumber": "(376) 766-9943",
+      "id": 19,
+      "userId": 1
+    },
+    {
+      "firstName": "Ignatius",
+      "lastName": "Webb",
+      "email": "justo@quis.ca",
+      "phoneNumber": "(176) 812-3853",
+      "id": 20,
+      "userId": 1
+    },
+    {
+      "firstName": "Dakota",
+      "lastName": "Dunlap",
+      "email": "purus@placeratCras.org",
+      "phoneNumber": "(887) 495-6453",
+      "id": 21,
+      "userId": 1
+    },
+    {
+      "firstName": "Judah",
+      "lastName": "Swanson",
+      "email": "et.lacinia.vitae@ametdiam.net",
+      "phoneNumber": "(636) 120-4635",
+      "id": 22,
+      "userId": 2
+    },
+    {
+      "firstName": "Arsenio",
+      "lastName": "William",
+      "email": "vulputate@molestiedapibus.edu",
+      "phoneNumber": "(331) 969-0139",
+      "id": 23,
+      "userId": 1
+    },
+    {
+      "firstName": "Rudyard",
+      "lastName": "Clayton",
+      "email": "magna.Ut.tincidunt@aliquameu.org",
+      "phoneNumber": "(792) 344-0788",
+      "id": 24,
+      "userId": 3
+    },
+    {
+      "firstName": "Nomlanga",
+      "lastName": "Hines",
+      "email": "eget.varius.ultrices@semperauctorMauris.org",
+      "phoneNumber": "(175) 400-7086",
+      "id": 25,
+      "userId": 3
+    },
+    {
+      "firstName": "Cody",
+      "lastName": "Castro",
+      "email": "Nam.ligula.elit@at.net",
+      "phoneNumber": "(481) 542-2509",
+      "id": 26,
+      "userId": 3
+    },
+    {
+      "firstName": "Xyla",
+      "lastName": "Mcneil",
+      "email": "hymenaeos.Mauris.ut@sit.edu",
+      "phoneNumber": "(339) 442-5613",
+      "id": 27,
+      "userId": 1
+    },
+    {
+      "firstName": "Azalia",
+      "lastName": "Morin",
+      "email": "malesuada.augue.ut@fermentumrisus.ca",
+      "phoneNumber": "(212) 488-6995",
+      "id": 28,
+      "userId": 3
+    },
+    {
+      "firstName": "Malik",
+      "lastName": "Moreno",
+      "email": "laoreet@tellus.com",
+      "phoneNumber": "(532) 173-5675",
+      "id": 29,
+      "userId": 1
+    },
+    {
+      "firstName": "Karina",
+      "lastName": "Best",
+      "email": "varius@Phasellusataugue.edu",
+      "phoneNumber": "(353) 114-7047",
+      "id": 30,
+      "userId": 2
+    },
+    {
+      "firstName": "Channing",
+      "lastName": "Bradford",
+      "email": "commodo@at.org",
+      "phoneNumber": "(583) 365-6481",
+      "id": 31,
+      "userId": 3
+    },
+    {
+      "firstName": "Nerea",
+      "lastName": "Butler",
+      "email": "dignissim@mollis.net",
+      "phoneNumber": "(661) 584-5395",
+      "id": 32,
+      "userId": 3
+    },
+    {
+      "firstName": "Amber",
+      "lastName": "Kinney",
+      "email": "nisl.elementum.purus@eratvitae.co.uk",
+      "phoneNumber": "(541) 562-7739",
+      "id": 33,
+      "userId": 2
+    },
+    {
+      "firstName": "Hamilton",
+      "lastName": "Bryant",
+      "email": "purus.Nullam@felisullamcorperviverra.ca",
+      "phoneNumber": "(186) 746-3852",
+      "id": 34,
+      "userId": 3
+    },
+    {
+      "firstName": "Cathleen",
+      "lastName": "Grimes",
+      "email": "ante.dictum@egestasligulaNullam.edu",
+      "phoneNumber": "(213) 860-5768",
+      "id": 35,
+      "userId": 1
+    },
+    {
+      "firstName": "Callie",
+      "lastName": "Moreno",
+      "email": "Vivamus.rhoncus@fringilla.ca",
+      "phoneNumber": "(159) 878-3614",
+      "id": 36,
+      "userId": 1
+    },
+    {
+      "firstName": "Jorden",
+      "lastName": "Estes",
+      "email": "ultricies.dignissim.lacus@sed.com",
+      "phoneNumber": "(633) 763-8559",
+      "id": 37,
+      "userId": 3
+    },
+    {
+      "firstName": "Rana",
+      "lastName": "Sykes",
+      "email": "fringilla@arcu.edu",
+      "phoneNumber": "(307) 698-0218",
+      "id": 38,
+      "userId": 3
+    },
+    {
+      "firstName": "Adara",
+      "lastName": "Mitchell",
+      "email": "tempor@nullamagna.co.uk",
+      "phoneNumber": "(497) 101-9879",
+      "id": 39,
+      "userId": 2
+    },
+    {
+      "firstName": "Noelle",
+      "lastName": "Meyers",
+      "email": "a.sollicitudin@vitaeposuere.com",
+      "phoneNumber": "(589) 694-4618",
+      "id": 40,
+      "userId": 1
+    },
+    {
+      "firstName": "Hilel",
+      "lastName": "Schneider",
+      "email": "ultrices@eros.edu",
+      "phoneNumber": "(503) 855-5327",
+      "id": 41,
+      "userId": 2
+    },
+    {
+      "firstName": "Violet",
+      "lastName": "Tanner",
+      "email": "nec.leo@justo.org",
+      "phoneNumber": "(966) 418-9663",
+      "id": 42,
+      "userId": 3
+    },
+    {
+      "firstName": "Quail",
+      "lastName": "Stewart",
+      "email": "eu@nonummyac.org",
+      "phoneNumber": "(346) 592-2021",
+      "id": 43,
+      "userId": 3
+    },
+    {
+      "firstName": "Luke",
+      "lastName": "Mcfadden",
+      "email": "Integer.eu.lacus@sit.net",
+      "phoneNumber": "(237) 501-6266",
+      "id": 44,
+      "userId": 2
+    },
+    {
+      "firstName": "Nicholas",
+      "lastName": "Berger",
+      "email": "non.dapibus.rutrum@purusgravidasagittis.net",
+      "phoneNumber": "(414) 807-3248",
+      "id": 45,
+      "userId": 2
+    },
+    {
+      "firstName": "Taylor",
+      "lastName": "Horton",
+      "email": "taciti.sociosqu@quisaccumsan.ca",
+      "phoneNumber": "(287) 514-9607",
+      "id": 46,
+      "userId": 1
+    },
+    {
+      "firstName": "Abel",
+      "lastName": "Hood",
+      "email": "ac@NullainterdumCurabitur.co.uk",
+      "phoneNumber": "(166) 498-0471",
+      "id": 47,
+      "userId": 2
+    },
+    {
+      "firstName": "Zelda",
+      "lastName": "Spence",
+      "email": "at.velit@vitaesodalesnisi.co.uk",
+      "phoneNumber": "(516) 831-5076",
+      "id": 48,
+      "userId": 3
+    },
+    {
+      "firstName": "Berk",
+      "lastName": "Parrish",
+      "email": "lorem@Phasellusataugue.co.uk",
+      "phoneNumber": "(193) 252-0719",
+      "id": 49,
+      "userId": 3
+    },
+    {
+      "firstName": "Xandra",
+      "lastName": "Wall",
+      "email": "Nullam@necanteMaecenas.com",
+      "phoneNumber": "(673) 771-7033",
+      "id": 50,
+      "userId": 2
+    },
+    {
+      "firstName": "Maite",
+      "lastName": "Burks",
+      "email": "luctus.ipsum.leo@malesuadafamesac.co.uk",
+      "phoneNumber": "(177) 220-9619",
+      "id": 51,
+      "userId": 2
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "Stevens",
+      "email": "tincidunt@elitEtiam.edu",
+      "phoneNumber": "(207) 912-6101",
+      "id": 52,
+      "userId": 3
+    },
+    {
+      "firstName": "Gregory",
+      "lastName": "Moran",
+      "email": "quis.pede.Suspendisse@idenimCurabitur.org",
+      "phoneNumber": "(190) 114-8578",
+      "id": 53,
+      "userId": 3
+    },
+    {
+      "firstName": "Blythe",
+      "lastName": "Lloyd",
+      "email": "pretium.aliquet@metus.ca",
+      "phoneNumber": "(440) 439-7672",
+      "id": 54,
+      "userId": 3
+    },
+    {
+      "firstName": "Rogan",
+      "lastName": "Wallace",
+      "email": "Nulla@et.edu",
+      "phoneNumber": "(853) 349-0404",
+      "id": 55,
+      "userId": 2
+    },
+    {
+      "firstName": "Kadeem",
+      "lastName": "Horne",
+      "email": "Fusce@Nam.ca",
+      "phoneNumber": "(928) 853-1372",
+      "id": 56,
+      "userId": 2
+    },
+    {
+      "firstName": "Jackson",
+      "lastName": "Andrews",
+      "email": "et.ultrices.posuere@massanon.com",
+      "phoneNumber": "(713) 968-2983",
+      "id": 57,
+      "userId": 1
+    },
+    {
+      "firstName": "Hedy",
+      "lastName": "House",
+      "email": "commodo.auctor.velit@nonluctus.co.uk",
+      "phoneNumber": "(687) 718-2990",
+      "id": 58,
+      "userId": 1
+    },
+    {
+      "firstName": "Desirae",
+      "lastName": "Conner",
+      "email": "ligula.Nullam@utquam.net",
+      "phoneNumber": "(588) 302-1191",
+      "id": 59,
+      "userId": 3
+    },
+    {
+      "firstName": "Sophia",
+      "lastName": "Joyce",
+      "email": "felis.purus@Aliquamgravidamauris.edu",
+      "phoneNumber": "(833) 427-8072",
+      "id": 60,
+      "userId": 2
+    },
+    {
+      "firstName": "Meghan",
+      "lastName": "Coffey",
+      "email": "lacinia@magnaetipsum.edu",
+      "phoneNumber": "(528) 934-1072",
+      "id": 61,
+      "userId": 1
+    },
+    {
+      "firstName": "Chelsea",
+      "lastName": "Moses",
+      "email": "Proin.mi.Aliquam@Fuscealiquetmagna.org",
+      "phoneNumber": "(783) 185-1489",
+      "id": 62,
+      "userId": 1
+    },
+    {
+      "firstName": "Inga",
+      "lastName": "Barnes",
+      "email": "ac.mi.eleifend@dolorFusce.org",
+      "phoneNumber": "(390) 316-4558",
+      "id": 63,
+      "userId": 2
+    },
+    {
+      "firstName": "Mikayla",
+      "lastName": "Gomez",
+      "email": "amet@aliquameuaccumsan.ca",
+      "phoneNumber": "(566) 889-0280",
+      "id": 64,
+      "userId": 2
+    },
+    {
+      "firstName": "Whitney",
+      "lastName": "Potts",
+      "email": "augue@faucibusidlibero.co.uk",
+      "phoneNumber": "(901) 221-0218",
+      "id": 65,
+      "userId": 3
+    },
+    {
+      "firstName": "Jelani",
+      "lastName": "Dunlap",
+      "email": "enim.mi.tempor@acfeugiatnon.org",
+      "phoneNumber": "(704) 102-6649",
+      "id": 66,
+      "userId": 1
+    },
+    {
+      "firstName": "Clarke",
+      "lastName": "Gardner",
+      "email": "penatibus.et@neque.com",
+      "phoneNumber": "(700) 643-6975",
+      "id": 67,
+      "userId": 3
+    },
+    {
+      "firstName": "Neville",
+      "lastName": "Hess",
+      "email": "velit.Pellentesque.ultricies@Namporttitor.com",
+      "phoneNumber": "(970) 391-1577",
+      "id": 68,
+      "userId": 3
+    },
+    {
+      "firstName": "Beck",
+      "lastName": "Kirby",
+      "email": "lorem.semper@sociis.net",
+      "phoneNumber": "(208) 696-0536",
+      "id": 69,
+      "userId": 3
+    },
+    {
+      "firstName": "Whilemina",
+      "lastName": "Craft",
+      "email": "Nunc.sed.orci@enimnectempus.edu",
+      "phoneNumber": "(189) 917-3696",
+      "id": 70,
+      "userId": 2
+    },
+    {
+      "firstName": "Marsden",
+      "lastName": "Barker",
+      "email": "mauris@neque.edu",
+      "phoneNumber": "(734) 811-1064",
+      "id": 71,
+      "userId": 3
+    },
+    {
+      "firstName": "Benedict",
+      "lastName": "Meyer",
+      "email": "amet@seddolorFusce.co.uk",
+      "phoneNumber": "(210) 491-8480",
+      "id": 72,
+      "userId": 3
+    },
+    {
+      "firstName": "Eleanor",
+      "lastName": "Ashley",
+      "email": "montes.nascetur@egettincidunt.ca",
+      "phoneNumber": "(722) 681-2751",
+      "id": 73,
+      "userId": 3
+    },
+    {
+      "firstName": "Phelan",
+      "lastName": "Carroll",
+      "email": "magna.Sed@perinceptos.com",
+      "phoneNumber": "(815) 958-2119",
+      "id": 74,
+      "userId": 3
+    },
+    {
+      "firstName": "Mercedes",
+      "lastName": "Carrillo",
+      "email": "orci.adipiscing.non@idsapienCras.co.uk",
+      "phoneNumber": "(993) 374-4331",
+      "id": 75,
+      "userId": 1
+    },
+    {
+      "firstName": "Geoffrey",
+      "lastName": "Yates",
+      "email": "Nullam.velit.dui@blandit.ca",
+      "phoneNumber": "(852) 880-0371",
+      "id": 76,
+      "userId": 1
+    },
+    {
+      "firstName": "Hadassah",
+      "lastName": "Terry",
+      "email": "et.magnis@ametmetus.org",
+      "phoneNumber": "(547) 523-1355",
+      "id": 77,
+      "userId": 3
+    },
+    {
+      "firstName": "Ariel",
+      "lastName": "Ratliff",
+      "email": "et.ipsum@mollis.com",
+      "phoneNumber": "(449) 234-5956",
+      "id": 78,
+      "userId": 3
+    },
+    {
+      "firstName": "Graham",
+      "lastName": "Bryant",
+      "email": "In@vulputateeuodio.net",
+      "phoneNumber": "(642) 627-2603",
+      "id": 79,
+      "userId": 1
+    },
+    {
+      "firstName": "Deacon",
+      "lastName": "Rollins",
+      "email": "Sed.eu@tincidunt.ca",
+      "phoneNumber": "(926) 327-3084",
+      "id": 80,
+      "userId": 1
+    },
+    {
+      "firstName": "Deborah",
+      "lastName": "Underwood",
+      "email": "semper.egestas@magnamalesuadavel.org",
+      "phoneNumber": "(783) 521-0797",
+      "id": 81,
+      "userId": 1
+    },
+    {
+      "firstName": "Yvette",
+      "lastName": "Flores",
+      "email": "Mauris.ut@turpisnecmauris.ca",
+      "phoneNumber": "(383) 632-2948",
+      "id": 82,
+      "userId": 2
+    },
+    {
+      "firstName": "Odysseus",
+      "lastName": "Snyder",
+      "email": "in@ligulaNullam.com",
+      "phoneNumber": "(454) 263-6098",
+      "id": 83,
+      "userId": 3
+    },
+    {
+      "firstName": "Thomas",
+      "lastName": "Albert",
+      "email": "leo.elementum@Maecenaslibero.edu",
+      "phoneNumber": "(544) 469-4550",
+      "id": 84,
+      "userId": 1
+    },
+    {
+      "firstName": "Kylynn",
+      "lastName": "Mckay",
+      "email": "porttitor@diam.edu",
+      "phoneNumber": "(693) 896-1167",
+      "id": 85,
+      "userId": 2
+    },
+    {
+      "firstName": "Allen",
+      "lastName": "Tanner",
+      "email": "et.lacinia.vitae@cursus.ca",
+      "phoneNumber": "(861) 600-6181",
+      "id": 86,
+      "userId": 3
+    },
+    {
+      "firstName": "Cedric",
+      "lastName": "Fisher",
+      "email": "In.ornare@molestie.ca",
+      "phoneNumber": "(639) 833-9545",
+      "id": 87,
+      "userId": 1
+    },
+    {
+      "firstName": "Hollee",
+      "lastName": "Olson",
+      "email": "sit.amet@nullaDonecnon.ca",
+      "phoneNumber": "(905) 814-3495",
+      "id": 88,
+      "userId": 1
+    },
+    {
+      "firstName": "Imogene",
+      "lastName": "Pratt",
+      "email": "cursus@enimEtiamimperdiet.com",
+      "phoneNumber": "(540) 592-1482",
+      "id": 89,
+      "userId": 3
+    },
+    {
+      "firstName": "Cullen",
+      "lastName": "Fernandez",
+      "email": "diam@tortornibh.org",
+      "phoneNumber": "(750) 926-4355",
+      "id": 90,
+      "userId": 2
+    },
+    {
+      "firstName": "Guy",
+      "lastName": "Soto",
+      "email": "sed@leoin.org",
+      "phoneNumber": "(201) 124-3081",
+      "id": 91,
+      "userId": 2
+    },
+    {
+      "firstName": "Paki",
+      "lastName": "Sweet",
+      "email": "Quisque.tincidunt.pede@nulla.co.uk",
+      "phoneNumber": "(716) 977-6528",
+      "id": 92,
+      "userId": 2
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Guzman",
+      "email": "sit@orciPhasellusdapibus.net",
+      "phoneNumber": "(749) 452-9931",
+      "id": 93,
+      "userId": 3
+    },
+    {
+      "firstName": "Xena",
+      "lastName": "Singleton",
+      "email": "ultrices.Duis@enim.edu",
+      "phoneNumber": "(826) 908-0616",
+      "id": 94,
+      "userId": 1
+    },
+    {
+      "firstName": "Donovan",
+      "lastName": "Taylor",
+      "email": "lacus.Etiam@gravidamauris.ca",
+      "phoneNumber": "(238) 740-7279",
+      "id": 95,
+      "userId": 3
+    },
+    {
+      "firstName": "Bo",
+      "lastName": "Beck",
+      "email": "auctor.velit@mattisvelit.co.uk",
+      "phoneNumber": "(402) 408-8416",
+      "id": 96,
+      "userId": 3
+    },
+    {
+      "firstName": "Tyrone",
+      "lastName": "Holloway",
+      "email": "commodo.tincidunt.nibh@etnetus.edu",
+      "phoneNumber": "(228) 633-4991",
+      "id": 97,
+      "userId": 1
+    },
+    {
+      "firstName": "Kaitlin",
+      "lastName": "Lewis",
+      "email": "pede.ac@MorbimetusVivamus.co.uk",
+      "phoneNumber": "(787) 241-5596",
+      "id": 98,
+      "userId": 3
+    },
+    {
+      "firstName": "Xander",
+      "lastName": "Goodwin",
+      "email": "risus.Nunc@Sed.ca",
+      "phoneNumber": "(513) 905-3008",
+      "id": 99,
+      "userId": 2
+    },
+    {
+      "firstName": "Lamar",
+      "lastName": "Stuart",
+      "email": "pede.et@interdumfeugiatSed.co.uk",
+      "phoneNumber": "(929) 628-2246",
+      "id": 100,
+      "userId": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "user1@email.com",
+      "password": "$2a$10$NvP6eI4G3zFpXa4C/cPlX.yQMwvuSMcEAtBodo1OfMMnOb.tQFz/m",
+      "id": 1
+    },
+    {
+      "email": "user2@email.com",
+      "password": "$2a$10$l/UkECoKSxUwxbdCk3LlGe1HcKxSEB9rTDNSz2LAukh6sJAqE/b4a",
+      "id": 2
+    },
+    {
+      "email": "user3@email.com",
+      "password": "$2a$10$sxMOxwPzt5HHHYN3YGck1uHFPOkU9hWHDy0qqFXdPO5jXfiawQOFi",
+      "id": 3
+    }
+  ]
 }
