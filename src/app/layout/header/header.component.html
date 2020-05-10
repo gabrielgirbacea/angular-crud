@@ -3,48 +3,48 @@
 
   <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
     <ul fxLayout fxLayoutGap="12px" class="navigation-items">
-      <li>
+      <li *ngIf="authService.isAuthenticated$ | async">
         <a routerLink="/contacts/add-contact">Add Contact</a>
       </li>
-      <li>
+      <li *ngIf="authService.isAuthenticated$ | async">
         <a routerLink="/contacts">Contacts</a>
       </li>
-      <li>
+      <li *ngIf="!(authService.isAuthenticated$ | async)">
         <a routerLink="/login">Log in</a>
       </li>
-      <li>
+      <li *ngIf="!(authService.isAuthenticated$ | async)">
         <a routerLink="/signup">Sign up</a>
       </li>
-      <li>
-        <a>Log out</a>
+      <li *ngIf="authService.isAuthenticated$ | async">
+        <a (click)="logout()">Log out</a>
       </li>
     </ul>
   </div>
 
   <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.gt-xs>
     <ul fxLayout class="navigation-items">
-      <li>
+      <li *ngIf="authService.isAuthenticated$ | async">
         <a mat-icon-button routerLink="/contacts/add-contact" matTooltip="Add Contact">
           <mat-icon>add</mat-icon>
         </a>
       </li>
-      <li>
+      <li *ngIf="authService.isAuthenticated$ | async">
         <a mat-icon-button routerLink="/contacts" matTooltip="Contacts">
           <mat-icon>contact_mail</mat-icon>
         </a>
       </li>
-      <li>
+      <li *ngIf="!(authService.isAuthenticated$ | async)">
         <a mat-icon-button routerLink="/login" matTooltip="Log in">
           <mat-icon>flight_land</mat-icon>
         </a>
       </li>
-      <li>
+      <li *ngIf="!(authService.isAuthenticated$ | async)">
         <a mat-icon-button routerLink="/signup" matTooltip="Sign up">
           <mat-icon>how_to_reg</mat-icon>
         </a>
       </li>
-      <li>
-        <button mat-icon-button matTooltip="Logout">
+      <li *ngIf="authService.isAuthenticated$ | async">
+        <button (click)="logout()" mat-icon-button matTooltip="Logout">
           <mat-icon>flight_takeoff</mat-icon>
         </button>
       </li>
